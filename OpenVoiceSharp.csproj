@@ -4,30 +4,33 @@
     <TargetFrameworks>netstandard2.1;net6.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Title>OpenVoiceSharp</Title>
-    <Authors>realcoloride</Authors>
+    <Title>REDcat.OpenVoiceSharp</Title>
+    <Authors>realcoloride, MrREDcat</Authors>
     <Description>OpenVoiceSharp - Agnostic C# VoIP/Voice Chat Library using Opus.</Description>
     <PackageIcon>openvoicesharp.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/realcoloride/OpenVoiceSharp</RepositoryUrl>
+    <RepositoryUrl>https://github.com/RED1cat/OpenVoiceSharp</RepositoryUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageProjectUrl>https://github.com/realcoloride/OpenVoiceSharp</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/RED1cat/OpenVoiceSharp</PackageProjectUrl>
     <PackageTags>voice; vc; voice-chat; voip; voicechat; audiostreaming; audio; realtime</PackageTags>
     <PackageReleaseNotes>Changed copying via array in circular buffer for optimization</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <LangVersion>11.0</LangVersion>
     <IncludeSymbols>False</IncludeSymbols>
+    <Platforms>AnyCPU;x64</Platforms>
+    <PackageId>REDcat.$(AssemblyName)</PackageId>
+    <Product>REDcat.$(AssemblyName)</Product>
 
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="NAudio" Version="2.3.0" />
     <PackageReference Include="OpusDotNet" Version="1.0.3" />
-    <PackageReference Include="System.Memory" Version="4.5.5" />
-    <PackageReference Include="WebRtcVadSharp" Version="1.3.2" />
-    <PackageReference Include="YellowDogMan.RRNoise.NET" Version="0.1.6" />
+    <PackageReference Include="System.Memory" Version="4.6.3" />
+	<PackageReference Include="WebRtcVadSharp" Version="1.3.2" />
+    <PackageReference Include="YellowDogMan.RRNoise.NET" Version="0.1.9" />
   </ItemGroup>
 
   <ItemGroup>
